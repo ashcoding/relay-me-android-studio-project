@@ -2,5 +2,5 @@ local.properties
 .gradle
 .idea
 build
-relay-me-android-studio-project.iml
+*.iml
 
