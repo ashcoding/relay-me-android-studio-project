@@ -1,2 +1,3 @@
-# relay-me-android-studio-project
-Android Studio files for Relay ME Android app
+# README #
+
+This project will include all the modules needed to compile Relay ME for Android.
