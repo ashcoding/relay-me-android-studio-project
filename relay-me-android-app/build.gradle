@@ -20,7 +20,7 @@ apt {
 android {
     signingConfigs {
         debug {
-            storeFile file('../relay-me-android-studio-project/debug.keystore')
+            storeFile file('../debug.keystore')
             keyAlias 'androiddebugkey'
             keyPassword 'android'
             storePassword 'android'

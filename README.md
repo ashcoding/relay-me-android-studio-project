@@ -1,6 +1,6 @@
 # README #
 
-This project will include all the modules needed to compile Relay ME for Android.
+This repo contains all the code needed to for the Android app [Relay ME](https://play.google.com/store/apps/details?id=com.tinywebgears.relayme).
 
 # Quickstart #
 
