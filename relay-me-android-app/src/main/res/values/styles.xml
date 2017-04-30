@@ -1,0 +1,100 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application Theme -->
+
+    <style name="Theme.Codolutions" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/main_color_even_lighter</item>
+        <item name="colorPrimaryDark">@color/main_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="actionOverflowMenuStyle">@style/MyOptionsMenu</item>
+        <item name="android:itemTextAppearance">@style/MyMenuTextAppearance</item>
+    </style>
+
+    <style name="MyOptionsMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/main_color</item>
+    </style>
+
+    <style name="MyMenuTextAppearance">
+        <item name="android:textColor">@color/inverse_text</item>
+    </style>
+
+
+    <!-- The rest -->
+
+    <style name="dialogcontents">
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:autoLink">all</item>
+        <item name="android:linksClickable">true</item>
+    </style>
+
+    <style name="listitems"></style>
+
+    <style name="dialoglayout"></style>
+
+    <style name="buttonbar" parent="@android:style/ButtonBar"></style>
+
+    <style name="buttonbarbutton">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="linkbutton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/complementary_color</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="secondarylinkbutton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">32dp</item>
+    </style>
+
+    <style name="actionbutton">
+        <item name="android:background">@color/complementary_color</item>
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="statuswarninglayout">
+        <item name="android:background">@color/background_warning</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="statuswarningtext">
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="normaltext">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="boldtext">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="headingtext">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="warningtext">
+        <item name="android:textColor">@color/warning_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="imagebutton">
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+</resources>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="shared_user_label">Relay ME</string>
+    <!-- General strings -->
+    <string name="btn_later">Later</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="lbl_app_name">Relay ME</string>
+    <string name="lbl_alert_title">Alert</string>
+    <string name="lbl_warning_title">Warning</string>
+    <string name="lbl_error_title">Error</string>
+    <string name="lbl_please_wait">Please wait</string>
+    <string name="lbl_dont_show_again">Don\'t show again.</string>
+    <string name="lbl_no_description"></string>
+    <string name="lbl_unknown">Unknown</string>
+    <!-- Error messages -->
+    <string name="lbl_internal_error">An internal error occurred. Please contact us using the help menu for help.</string>
+    <string name="lbl_no_internet_browser">Couldn\'t find an Internet browser on your phone. Please check and try again. Alternatively open this URL manually: %s</string>
+    <string name="lbl_no_internet_connection">Couldn\'t connect to the Internet, please check your connectivity and try again.</string>
+    <string name="lbl_not_in_sync_with_server">Trying to connect to server, please check back in a few seconds.</string>
+    <string name="lbl_failed_to_sync_with_server">Failed to connect to server, please contact us for help.</string>
+    <string name="lbl_internet_connection_lost">Lost Internet connectivity.</string>
+    <string name="lbl_pending_messages">There are pending messages.</string>
+    <string name="lbl_replying_disabled">Replying to messages is turned off.</string>
+    <string name="lbl_service_off">Service is currently turned or scheduled off.</string>
+    <string name="lbl_oauth_error">An error occurred linking your GMail account, please try again and contact us if the problem persists.</string>
+    <string name="lbl_unable_to_import">Couldn\'t import data from the old app. Please re-configure the app manually.</string>
+    <string name="lbl_configuration_not_done_target">Configuration in-complete: Please set up where your texts should be sent to.</string>
+    <string name="lbl_configuration_not_done_gateway">Configuration in-complete: Please set up how I am going to send/receive emails.</string>
+    <string name="lbl_using_deprecated_oauth">You have set up your GMail account using deprecated OAuth 1.0 which is no longer supported by Google. Please re-link your GMail account.</string>
+    <string name="lbl_checking_smtp_server">Testing your SMTP server...</string>
+    <string name="lbl_invalid_smtp_server_configuration">Invalid SMTP server configuration.</string>
+    <string name="lbl_smtp_server_connection_failed">SMTP server test failed: %s</string>
+    <string name="lbl_checking_imap_server">Testing your IMAP server...</string>
+    <string name="lbl_invalid_imap_server_configuration">Invalid IMAP server configuration.</string>
+    <string name="lbl_imap_server_connection_failed">IMAP server test failed: %s</string>
+    <!-- Notifications -->
+    <string name="lbl_notification_heading">Relay ME</string>
+    <!-- Main activity -->
+    <string name="acn_go_pro">Upgrade</string>
+    <string name="acn_import">Import Settings</string>
+    <string name="acn_rate_us">Rate Me</string>
+    <string name="acn_help">Help</string>
+    <string name="acn_about">About</string>
+    <string name="lbl_tab_configuration">Settings</string>
+    <string name="lbl_tab_errors">Errors</string>
+    <string name="lbl_tab_messages">Messages</string>
+    <string name="lbl_pro_app_missing">Couldn\'t find the unlocker app.</string>
+    <string name="lbl_pro_app_not_uptodate">Unlocker app is not up-to-date. Please update it to the latest version before retrying.</string>
+    <string name="lbl_import_complete">Settings imported successfully.</string>
+    <!-- Billing -->
+    <string name="lbl_feature_all">All</string>
+    <string name="lbl_feature_all_desc">All Features</string>
+    <string name="lbl_feature_poc">POC</string>
+    <string name="lbl_feature_poc_desc">Proof of Concept Features</string>
+    <string name="lbl_feature_pro">Pro</string>
+    <string name="lbl_feature_pro_desc">Pro Features</string>
+    <string name="lbl_already_purchased_error">You have already purchased this feature.</string>
+    <string name="lbl_billing_inventory_query_error">Couldn\'t check status of purchases from Google.</string>
+    <string name="lbl_billing_setup_error">In-app billing is not set up on this device.</string>
+    <string name="lbl_purchasing_error">Couldn\'t purchase this feature.</string>
+    <string name="lbl_verifying_developer_payload">Verification failed.</string>
+    <!-- Configuration fragment -->
+    <string name="btn_add_target_email">Add</string>
+    <string name="btn_setup_target_email">Set target email address</string>
+    <string name="btn_setup_target_cc_email">Add CC</string>
+    <string name="btn_cancel_edit_target_email">Cancel</string>
+    <string name="btn_edit_target_email">Edit</string>
+    <string name="btn_save_target_email">Save</string>
+    <string name="btn_test_now">Check</string>
+    <string name="btn_save_anyway">Save anyway</string>
+    <string name="btn_delete_target_email">Delete</string>
+    <string name="btn_delete_target_cc_email">Delete</string>
+    <string name="btn_setup_gmail_gateway">Link GMail account</string>
+    <string name="btn_setup_smtp_server">Set up</string>
+    <string name="btn_delete_smtp_server">Delete SMTP server</string>
+    <string name="btn_edit_smtp_server">Edit SMTP server</string>
+    <string name="btn_setup_imap_server">Set up</string>
+    <string name="btn_delete_imap_server">Delete IMAP server</string>
+    <string name="btn_edit_imap_server">Edit IMAP server</string>
+    <string name="btn_delete_email_gateway">Delete GMail gateway</string>
+    <string name="btn_clear_oauth">Remove</string>
+    <string name="btn_upgrade">Upgrade</string>
+    <string name="btn_check_sms">Troubleshoot</string>
+    <string name="btn_set_schedule">Set Schedule</string>
+    <string name="btn_set_trigger_code">Set SMS Code</string>
+    <string name="btn_edit_reply_source">Edit</string>
+    <string name="btn_edit_email_subject_prefix">Edit email subject prefix</string>
+    <string name="lbl_add_cc_email">Add CC</string>
+    <string name="lbl_cc_email_field_label">CC</string>
+    <string name="lbl_setup_instructions_target_email">Please specify where your texts should be forwarded to.</string>
+    <string name="lbl_setup_instructions_email_gateway">Please link a GMail account.</string>
+    <string name="lbl_targets_title">Forward to</string>
+    <string name="lbl_gateway_type_title">Send via</string>
+    <string name="lbl_reply_switch_title">Check for replies</string>
+    <string name="lbl_reply_gateway_not_setup">Please configure a reply gateway to see more options.</string>
+    <string name="lbl_reply_status_switch">Report back status</string>
+    <string name="lbl_replying_from_different_email">Replying from a different email</string>
+    <string name="lbl_mailbox">Look in</string>
+    <string name="lbl_tell_me_about_missed_calls">Tell me about missed calls</string>
+    <string name="lbl_connecting_to_google">Connecting to Google...</string>
+    <string name="lbl_oauth_success">GMail account successfully linked.</string>
+    <string name="lbl_activation_status">Service status</string>
+    <string name="lbl_activation_disabled">Off</string>
+    <string name="lbl_activation_always">On</string>
+    <string name="lbl_activation_scheduled">Scheduled</string>
+    <string name="lbl_forwarding_method_sms">SMS</string>
+    <string name="lbl_forwarding_method_email">Email</string>
+    <string name="lbl_service_trigger_help">You can always turn the service on by sending yourself the code %s in a text message.</string>
+    <string name="lbl_service_schedule_help">Please specify times in 24-hour format (HH:MM).</string>
+    <string name="lbl_service_schedule_current">Service will be on from %1$s to %2$s.</string>
+    <string name="lbl_service_schedule_current_next_day">Service will be on from %1$s to %2$s (next day).</string>
+    <string name="lbl_service_schedule_start">From</string>
+    <string name="lbl_service_schedule_end">To</string>
+    <string name="lbl_gateway_type_builtin">BuiltIn</string>
+    <string name="lbl_gateway_type_gmail">GMail</string>
+    <string name="lbl_gateway_type_custom">SMTP/IMAP</string>
+    <string name="lbl_gateway_type_title_builtin">You will receive emails from sms@codolutions.com.</string>
+    <string name="lbl_gateway_type_title_gmail">I will use a GMail account provided by you to send emails.</string>
+    <string name="lbl_gateway_type_title_custom">I will use your own SMTP/IMAP server to send and receive emails.</string>
+    <string name="lbl_smtp_server_email">Email</string>
+    <string name="lbl_smtp_server_ip">Hostname</string>
+    <string name="lbl_smtp_server_port">Port</string>
+    <string name="lbl_smtp_server_authentication">Authentication required</string>
+    <string name="lbl_smtp_server_username">Username</string>
+    <string name="lbl_smtp_server_password">Password</string>
+    <string name="lbl_smtp_server_security">Security</string>
+    <string name="lbl_imap_server_ip">Hostname</string>
+    <string name="lbl_imap_server_port">Port</string>
+    <string name="lbl_imap_server_authentication">Authentication required</string>
+    <string name="lbl_imap_server_username">Username</string>
+    <string name="lbl_imap_server_password">Password</string>
+    <string name="lbl_imap_server_security">Security</string>
+    <string name="lbl_server_security_ssl">SSL</string>
+    <string name="lbl_server_security_starttls">STARTTLS</string>
+    <string name="lbl_server_security_ssl_starttls">STARTTLS/SSL</string>
+    <string name="lbl_polling_factor">Optimize for</string>
+    <string name="lbl_polling_factor_fast">Faster response</string>
+    <string name="lbl_polling_factor_slow">Battery saving</string>
+    <string name="lbl_waiting_for_sms">I haven\'t yet received any SMS since you configured me. Still listening...</string>
+    <string name="lbl_gateway_type_desc_builtin">Use this option to get started, consider using a more secure approach later. It is a shared gateway, if compromised everyone\'s private data will be exposed.</string>
+    <string name="lbl_gateway_type_desc_gmail">Please read more about this at http://codolutions.com/relayme/android/wiki.html. Consider creating a brand new account to use here for maximum protection.</string>
+    <string name="lbl_gateway_type_desc_custom">Please specify IP address, port number, and credentials for SMTP and IMAP servers.</string>
+    <string name="lbl_smtp_server_label">SMTP server</string>
+    <string name="lbl_imap_server_label">IMAP server</string>
+    <string name="lbl_email_subject_prefix">Email subject prefix</string>
+    <string name="hnt_src_email_test_box">Source email address</string>
+    <string name="hnt_target_email_text_box">Target email address</string>
+    <string name="hnt_target_cc_email_text_box">CC email address</string>
+    <string name="hnt_sms_code_text_box">SMS code to activate service</string>
+    <string name="hnt_start_time_text_box">Start time</string>
+    <string name="hnt_end_time_text_box">End time</string>
+    <string name="hnt_reply_source_text_box">Email address replying from</string>
+    <string name="hnt_email_subject_prefix_text_box">Email subject prefix</string>
+    <!-- Messages fragment -->
+    <string name="acn_resend_messages">Resend Messages</string>
+    <string name="acn_delete_messages">Delete Messages</string>
+    <string name="acn_delete_message">Delete Message</string>
+    <string name="acn_resend_message">Resend Message</string>
+    <string name="lbl_message_date_created">Arrived on: %s</string>
+    <string name="lbl_message_date_updated">Updated on: %s</string>
+    <string name="lbl_message_details_dialog_title">Message details</string>
+    <string name="lbl_message_from">From: %s</string>
+    <string name="lbl_message_header_incoming">%1$s\n%2$s</string>
+    <string name="lbl_message_header_outgoing">%1$s\n%2$s</string>
+    <string name="lbl_message_header_tried">%s tries</string>
+    <string name="lbl_message_header_tried_once">1 try</string>
+    <string name="lbl_message_to">To: %s</string>
+    <string name="lbl_messages_deleted">Messages deleted.</string>
+    <!-- Errors fragment -->
+    <string name="acn_delete_logs">Clear Errors</string>
+    <string name="lbl_errors_deleted">Errors cleared.</string>
+    <string name="lbl_error_header_repeats">repeated %s times</string>
+    <!-- Welcome dialog -->
+    <string name="btn_welcome_dialog_hide">OK</string>
+    <string name="lbl_welcome_dialog_title">WARNING!</string>
+    <string name="lbl_welcome_dialog_header">This app is not maintained anymore. It will be removed from Google Play by 31/06/2017.</string>
+    <string name="lbl_welcome_dialog_details">If you are a developer and would like to maintain this app, please email info@codolutions.com.</string>
+    <!-- OAuth dialog -->
+    <string name="lbl_oauth_dialog_title">Linking GMail account</string>
+    <string name="lbl_oauth_dialog_header">Redirecting you to Google now.</string>
+    <string name="lbl_oauth_dialog_details">Please authorize this app to use your GMail account. You may sign up for a new account if you wish to do so.</string>
+    <!-- Delete target email dialog -->
+    <string name="lbl_delete_email_dialog_title">Deleting email</string>
+    <string name="lbl_delete_email_dialog_confirmation">%s</string>
+    <!-- Clear OAuth dialog -->
+    <string name="lbl_clear_oauth_dialog_title">Unlinking GMail account</string>
+    <string name="lbl_clear_oauth_dialog_confirmation">Consider revoking the access in Google account dashboard as well.</string>
+    <string name="lbl_clear_oauth_dialog_goto_google">Open Google account dashboard</string>
+    <!-- Delete messages dialog -->
+    <string name="lbl_message_delete_all_dialog_title">Deleting messages</string>
+    <string name="lbl_message_delete_all_dialog_confirmation">I will delete all the messages if you confirm.</string>
+    <!-- Delete SMTP server dialog -->
+    <string name="lbl_delete_smtp_server_dialog_title">Deleting SMTP server</string>
+    <string name="lbl_delete_smtp_server_dialog_confirmation">%s</string>
+    <!-- Delete IMAP server dialog -->
+    <string name="lbl_delete_imap_server_dialog_title">Deleting IMAP server</string>
+    <string name="lbl_delete_imap_server_dialog_confirmation">%s</string>
+    <!-- Upgrade dialog -->
+    <string name="btn_upgrade_dialog_try">Try</string>
+    <string name="btn_upgrade_dialog_now">Now</string>
+    <string name="lbl_upgrade_dialog_title">Upgrade</string>
+    <string name="lbl_upgrade_dialog_header">If you upgrade you can reply to texts from your mailbox.</string>
+    <string name="lbl_upgrade_dialog_details">All you need to do then is replying the email in your inbox, without modifying subject and email addresses.</string>
+    <!-- Trial -->
+    <string name="lbl_trial_expired">Upgrade (Trial is Over)</string>
+    <string name="lbl_trials_remain">Upgrade (%s Tries left)</string>
+    <string name="lbl_one_trial_remains">Upgrade (1 Try Left)</string>
+    <!-- About dialog -->
+    <string name="btn_about_dialog_website">Web</string>
+    <string name="btn_about_dialog_email">Email</string>
+    <string name="btn_about_dialog_help">Help</string>
+    <string name="lbl_about_dialog_icon_description">Application icon</string>
+    <string name="lbl_about_dialog_title">About</string>
+    <string name="lbl_about_dialog_version">Version: %s</string>
+    <string name="lbl_about_dialog_date">Date: %s</string>
+    <string name="lbl_about_dialog_copyright">by Codolutions</string>
+    <string name="lbl_about_dialog_unique_id">Your unique ID:</string>
+    <string name="lbl_about_dialog_error_getting_unique_id">Could\'t find unique ID.</string>
+    <string name="lbl_about_dialog_unique_id_copied">Unique ID copied to your clipboard.</string>
+    <string name="lbl_about_dialog_details">Thanks for using Relay ME. Please feel free to send your feedback using links below.</string>
+    <string name="str_about_dialog_email_subject">About Relay ME, the Android app</string>
+    <!-- Help dialog -->
+    <string name="btn_help_dialog_check_wiki">Check Wiki</string>
+    <string name="btn_help_dialog_contact_us">Contact Us</string>
+    <string name="lbl_help_dialog_title">Help</string>
+    <string name="lbl_help_dialog_header">If you are having issues with this app, please check the wiki first. You might find your answer there.</string>
+    <string name="lbl_help_dialog_details">Still having problems? Please feel free to contact us for help.</string>
+    <!-- Help SMS dialog -->
+    <string name="btn_sms_help_dialog_check_wiki">Check Wiki</string>
+    <string name="btn_sms_help_dialog_contact_us">Contact Us</string>
+    <string name="lbl_sms_help_dialog_title">Troubleshooting SMS</string>
+    <string name="lbl_sms_help_dialog_header">Another application can prevent SMS messages from getting to me.</string>
+    <string name="lbl_sms_help_dialog_header_apps_found">Another application can prevent SMS messages from getting to me, it is worth checking:</string>
+    <string name="lbl_sms_help_dialog_details">Feel free to check the wiki or contact us for help.</string>
+    <!-- Contact support dialog -->
+    <string name="btn_contact_support_dialog_check_wiki">Check Wiki</string>
+    <string name="btn_contact_support_dialog_send_logs">Send Logs</string>
+    <string name="lbl_contact_support_dialog_title">Contact Us</string>
+    <string name="lbl_contact_support_dialog_header">In order to investigate the issue you are having, please fill out this form and submit. Logs and diagnostics information will also be sent with it.</string>
+    <string name="lbl_contact_support_dialog_crashed">I detected a crash, please send some logs for us to investigate.</string>
+    <string name="lbl_contact_support_dialog_category">What is the problem?</string>
+    <string name="lbl_contact_support_dialog_category_crash">The application just crashed.</string>
+    <string name="lbl_contact_support_dialog_category_gmail_oauth">I can\'t link my GMail account.</string>
+    <string name="lbl_contact_support_dialog_category_text_forwarding">My texts are not forwarded.</string>
+    <string name="lbl_contact_support_dialog_category_replying">I can\'t reply to texts.</string>
+    <string name="lbl_contact_support_dialog_category_duplicates">Duplicate messages</string>
+    <string name="lbl_contact_support_dialog_category_billing">I can\'t upgrade.</string>
+    <string name="lbl_contact_support_dialog_category_other">Other, please describe</string>
+    <string name="lbl_contact_support_dialog_comments">Can you tell us more?</string>
+    <string name="lbl_contact_support_dialog_include_settings">Include application settings</string>
+    <!-- Strings used in emails -->
+    <string name="str_email_subject_sms">SMS</string>
+    <string name="str_email_subject_mms">MMS</string>
+    <string name="str_email_subject_missed_call">Call</string>
+    <string name="str_email_subject_status">[STATUS] SMS to %s</string>
+    <string name="str_email_subject_status_name">[STATUS] SMS to %1$s (%2$s)</string>
+    <string name="str_email_status_body_succeeded">Your text was successfully sent.\n\n%s</string>
+    <string name="str_email_status_body_failed">I detected an error while sending the text. It might have failed. You might want to try again.\n\n%s</string>
+    <string name="str_email_subject">%1$s from %2$s</string>
+    <string name="str_email_subject_with_name">%1$s from %2$s (%3$s)</string>
+    <string name="str_email_subject_pattern_1">^\\s*(%s\\s+)?SMS\\s+</string>
+    <string name="str_email_subject_pattern_2">^\\s*((Re:|Fwd:|Fw:|RE:|FWD:|FW:|Forward:|FORWARD:)\\s+)+(%s\\s+)?SMS\\s+from\\s+</string>
+    <string name="str_email_subject_pattern_3">^\\s*((Re:|Fwd:|Fw:|RE:|FWD:|FW:|Forward:|FORWARD:)\\s+)+(%s\\s+)?MMS\\s+from\\s+</string>
+    <string name="str_email_subject_pattern_4">^\\s*((Re:|Fwd:|Fw:|RE:|FWD:|FW:|Forward:|FORWARD:)\\s+)+(%s\\s+)?Call\\s+from\\s+</string>
+    <string name="str_you_received_mms">You received an MMS from this number. Relay ME doesn\'t support multimedia messages yet.</string>
+    <string name="str_you_missed_call">You missed a call from this number.</string>
+    <string name="str_sms_activation_code">RELAY%s</string>
+    <string name="txt_message_timestamps">\n\n--\nReceived: %s</string>
+    <string name="txt_signature">\n\n--\nSent by Relay ME for Android.</string>
+    <string name="txt_signature_reply">\n\n--\nSent by Relay ME for Android. If you upgrade you can reply to this message from here.</string>
+
+    <!-- Colors -->
+    <color name="enabled">#000000</color>
+    <color name="scheduled">#000000</color>
+    <color name="disabled">#000000</color>
+    <color name="main_color_even_lighter">#8b1313</color>
+    <color name="main_color_lighter">#751010</color>
+    <color name="main_color">#5e0d0d</color>
+    <color name="main_color_darker">#480a0a</color>
+    <color name="main_color_even_darker">#320707</color>
+    <color name="complementary_color">#0a4848</color>
+    <color name="accent_color">#0d5e5e</color>
+    <color name="accent_color_lighter">#107474</color>
+    <color name="accent_color_even_lighter">#138b8b</color>
+    <color name="icon_color">#848484</color>
+    <color name="main_text">#484848</color>
+    <color name="inverse_text">#FFFFFF</color>
+    <color name="black_text">#000000</color>
+    <color name="background_warning">#FFF380</color>
+    <color name="background_list_heading">#F0FFFF</color>
+    <color name="background_action_button">#39A5E2</color>
+    <color name="background_list_item">#FFFFFF</color>
+    <color name="error_text">#FF2000</color>
+    <color name="warning_text">#FF8000</color>
+    <color name="overlay_text">#FFFFFF</color>
+    <color name="overlay_button_text">#FFFFFF</color>
+
+    <color name="lighter_gray">#ddd</color>
+    <color name="darker_gray">#aaa</color>
+
+</resources>

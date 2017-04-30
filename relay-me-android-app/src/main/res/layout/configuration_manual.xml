@@ -1,0 +1,110 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" >
+
+    <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+
+    <LinearLayout
+        android:id="@+id/focusstealer"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" />
+
+    <!-- Contents -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Targets -->
+
+            <include layout="@layout/configuration_targets" />
+
+            <!-- Forwarding -->
+
+            <include layout="@layout/configuration_gateway" />
+
+            <LinearLayout
+                android:id="@+id/configurationwarninglayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/configurationwarningtext"
+                    style="@style/warningtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondaryconfigurationlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- Forwarding -->
+
+                <include layout="@layout/configuration_forwarding_options" />
+
+                <!-- Replying -->
+
+                <include layout="@layout/configuration_replying" />
+
+                <!-- Service Control -->
+
+                <include layout="@layout/configuration_service" />
+            </LinearLayout>
+
+            <!-- End -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/configurationtail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Status -->
+
+        <include layout="@layout/configuration_status" />
+
+        <!-- Check SMS -->
+
+        <LinearLayout
+            android:id="@+id/smschecklayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/smscheckdescription"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/lbl_waiting_for_sms" />
+
+            <Button
+                android:id="@+id/smscheckbutton"
+                style="@style/actionbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_check_sms" />
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

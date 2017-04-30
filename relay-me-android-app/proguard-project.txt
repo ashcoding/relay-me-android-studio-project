@@ -1,0 +1,55 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keep class !com.codolutions.android.common.serverside.**,!com.tinywebgears.relayme.serverside.**,!com.tinywebgears.relayme.oauth.** { *; }
+
+-keep class android.support.** { *; }
+-keep interface android.support.** { *; }
+-keep class com.actionbarsherlock.** { *; }
+-keep interface com.actionbarsherlock.** { *; }
+
+-keepnames class * implements java.io.Serializable
+-keepclassmembers class * {
+    @com.google.inject.Inject <fields>;
+    @com.google.inject.Inject <init>(...);
+}
+-keepattributes Signature
+-keepattributes *Annotation*
+
+-dontwarn roboguice.**
+-dontwarn myjava.awt.datatransfer.**
+-dontwarn javax.activation.**
+-dontwarn javax.**
+-dontwarn com.xtremelabs.**
+-dontwarn sun.misc.**
+-dontwarn com.sun.mail.**
+-dontwarn com.google.android.**
+-dontwarn android.**
+-dontwarn org.junit.**
+-dontwarn org.springframework.**
+-dontwarn java.awt.**
+-dontwarn org.junit.**
+-dontwarn org.hamcrest.**
+
+-renamesourcefileattribute SourceFile
+-keepattributes SourceFile,LineNumberTable
+
+-dontskipnonpubliclibraryclassmembers

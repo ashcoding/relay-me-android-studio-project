@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/targetslayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <!-- Targets -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:singleLine="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/lbl_no_description"
+                android:src="@drawable/switch_targets" />
+
+            <TextView
+                style="@style/headingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/lbl_targets_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addccemailinstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/addccemail"
+                style="@style/linkbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:text="@string/lbl_add_cc_email" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Options -->
+
+    <LinearLayout
+        android:id="@+id/targetsoptionslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp" >
+
+        <!-- Setup Instructions, Target Email -->
+
+        <LinearLayout
+            android:id="@+id/setuptargetinstructionslayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/normaltext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_setup_instructions_target_email" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/setuptargetbutton"
+                    style="@style/linkbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="32dip"
+                    android:text="@string/btn_setup_target_email" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Edit Target Email -->
+
+        <LinearLayout
+            android:id="@+id/edittargetemaillayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edittargetemailtextbox"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/hnt_target_email_text_box"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:singleLine="true" >
+
+                <ImageView
+                    android:id="@+id/canceleditemailbutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_cancel"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_revert" />
+
+                <ImageView
+                    android:id="@+id/saveemailbutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_ok"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_save" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Target Email -->
+
+        <LinearLayout
+            android:id="@+id/targetemaillayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:singleLine="true" >
+
+                <TextView
+                    android:id="@+id/targetemailaddress"
+                    style="@style/normaltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="16dp" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/edittargetemailbutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_edit_target_email"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_edit" />
+
+                <ImageView
+                    android:id="@+id/deletetargetemailbutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_delete_target_email"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_delete" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Edit CC Email -->
+
+        <LinearLayout
+            android:id="@+id/editccemaillayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editccemailtextbox"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/hnt_target_cc_email_text_box"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:singleLine="true" >
+
+                <ImageView
+                    android:id="@+id/canceleditccemailbutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_cancel"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_revert" />
+
+                <ImageView
+                    android:id="@+id/saveccemailbutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_ok"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_save" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- CC Email -->
+
+        <LinearLayout
+            android:id="@+id/ccemaillayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/normaltext"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="16dp"
+                    android:singleLine="true"
+                    android:text="@string/lbl_cc_email_field_label" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ccemailaddress"
+                    style="@style/normaltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="16dp"
+                    android:singleLine="true" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/editccemailbutton"
+                style="@style/imagebutton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/btn_edit_target_email"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_edit" />
+
+            <ImageView
+                android:id="@+id/deleteccemailbutton"
+                style="@style/imagebutton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/btn_delete_target_cc_email"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

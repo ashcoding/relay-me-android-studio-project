@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/servicecontrollayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/lbl_no_description"
+        android:paddingBottom="8dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_bright" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/servicecontrolicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/lbl_no_description"
+                android:src="@drawable/switch_activation" />
+
+            <TextView
+                android:id="@+id/servicecontrollabel"
+                style="@style/headingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/lbl_activation_status" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/servicecontrolspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Service Schedule -->
+
+    <LinearLayout
+        android:id="@+id/serviceschedulelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/setschedulehelplabel"
+            style="@style/normaltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/lbl_service_schedule_help" />
+
+        <TextView
+            android:id="@+id/currentschedulelabel"
+            style="@style/normaltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/servicescheduleheadinglayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/setschedulebutton"
+                style="@style/linkbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_set_schedule" />
+        </LinearLayout>
+
+        <!-- Edit Schedule -->
+
+        <LinearLayout
+            android:id="@+id/editschedulelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/setschedulestartlabel"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/lbl_service_schedule_start" />
+
+            <EditText
+                android:id="@+id/editschedulestarttimetextbox"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/hnt_start_time_text_box"
+                android:inputType="time"
+                android:singleLine="true" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/setscheduleendlabel"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/lbl_service_schedule_end" />
+
+            <EditText
+                android:id="@+id/editscheduleendtimetextbox"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/hnt_end_time_text_box"
+                android:inputType="time"
+                android:singleLine="true" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:singleLine="true" >
+
+                <ImageView
+                    android:id="@+id/canceleditschedulebutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_cancel"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_revert" />
+
+                <ImageView
+                    android:id="@+id/saveschedulebutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_ok"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_save" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- SMS Trigger -->
+
+    <LinearLayout
+        android:id="@+id/smstriggerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/setsmstriggercodehelplabel"
+            style="@style/normaltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/smstriggerheadinglayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/setsmstriggercodebutton"
+                style="@style/linkbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_set_trigger_code" />
+        </LinearLayout>
+
+        <!-- Edit SMS Trigger -->
+
+        <LinearLayout
+            android:id="@+id/editsmstriggercodelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editsmstriggercodetextbox"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/hnt_sms_code_text_box"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:singleLine="true" >
+
+                <ImageView
+                    android:id="@+id/canceleditsmstriggercodebutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_cancel"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_revert" />
+
+                <ImageView
+                    android:id="@+id/savesmstriggercodebutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_ok"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_save" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

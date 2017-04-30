@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imaplayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:orientation="vertical"
+    android:paddingTop="8dp" >
+
+    <!-- IMAP Server, Heading -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:singleLine="true" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/imapserverlabel"
+                style="@style/normaltext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:text="@string/lbl_imap_server_label" >
+            </TextView>
+
+            <!-- IMAP Server, View -->
+
+            <LinearLayout
+                android:id="@+id/imapserverviewlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:paddingLeft="0dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/imapserversummary"
+                    style="@style/normaltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:singleLine="true" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/imapserverviewbuttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/editimapserverbutton"
+                style="@style/imagebutton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/btn_edit_imap_server"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_edit" />
+
+            <ImageView
+                android:id="@+id/deleteimapserverbutton"
+                style="@style/imagebutton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/btn_delete_imap_server"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/imapservereditbuttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/canceleditimapserverbutton"
+                style="@style/imagebutton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/btn_cancel"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_revert" />
+
+            <ImageView
+                android:id="@+id/saveimapserverbutton"
+                style="@style/imagebutton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/btn_cancel"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_save" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setupimapserver"
+            style="@style/linkbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_setup_imap_server" />
+    </LinearLayout>
+
+    <!-- IMAP Server, Status -->
+
+    <LinearLayout
+        android:id="@+id/imapserverstatuslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="0dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/imapserverstatusmessage"
+            style="@style/warningtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/imapserverstatusactions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/imapserversaveanyway"
+                style="@style/linkbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_save_anyway" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- IMAP Server, Edit -->
+
+    <LinearLayout
+        android:id="@+id/imapservereditlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:singleLine="true" >
+
+        <!-- Hostname / IP Address -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:singleLine="true" >
+
+            <TextView
+                style="@style/normaltext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="16dp"
+                android:text="@string/lbl_imap_server_ip" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/imapserverip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- Port number -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:singleLine="true" >
+
+            <TextView
+                style="@style/normaltext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="16dp"
+                android:text="@string/lbl_imap_server_port" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/imapserverport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- Authentication -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:singleLine="true"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/normaltext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="16dp"
+                android:text="@string/lbl_imap_server_authentication" >
+            </TextView>
+
+            <CheckBox
+                android:id="@+id/imapserverauthentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true" >
+            </CheckBox>
+        </LinearLayout>
+
+        <!-- Username -->
+
+        <LinearLayout
+            android:id="@+id/imapserverusernamelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:singleLine="true" >
+
+            <TextView
+                style="@style/normaltext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="16dp"
+                android:text="@string/lbl_imap_server_username" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/imapserverusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- Password -->
+
+        <LinearLayout
+            android:id="@+id/imapserverpasswordlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:singleLine="true" >
+
+            <TextView
+                style="@style/normaltext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="16dp"
+                android:text="@string/lbl_imap_server_password" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/imapserverpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- Security -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:singleLine="true" >
+
+            <TextView
+                style="@style/normaltext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="16dp"
+                android:text="@string/lbl_imap_server_security" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/imapserversecurity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true" >
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

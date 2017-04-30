@@ -4,11 +4,24 @@ This project will include all the modules needed to compile Relay ME for Android
 
 # Quickstart #
 
-* Clone the Android app repo: [https://github.com/codolutions/relay-me-android-app](https://github.com/codolutions/relay-me-android-app)
-* Point the relayme-app symbolic link in the root directory to the Android app directory
-* Create a project in Android Studio, or build using Gradle.
+Create a project in Android Studio, or build using Gradle.
 
-# Quick Release #
-* Clone the server-side configuration repo: [https://github.com/codolutions/relay-me-android-server-side](https://github.com/codolutions/relay-me-android-server-side)
-* Update it to match your server-side component. It currently uses a test web application on [https://relay-me-test-server-side.herokuapp.com](https://relay-me-test-server-side.herokuapp.com/).
-* Build a signed APK and upload to Google Play
+# How to contribute #
+
+Please raise pull-requests to this repo.
+
+# Server-side component #
+
+This app requires a server-side component, which is used for the OAuth flow with Google.
+Its code lives [here](https://github.com/codolutions/relay-me-server-side-component), and you can access it live on [on Heroku](https://relay-me-test-server-side.herokuapp.com/) for testing.
+
+### Whey does Relay ME use browser OAuth, instead of a native one? ###
+http://thehackernews.com/2014/08/hacking-gmail-account-mobile-app.html
+
+### Running your own server-side component ###
+
+* Follow the instructions in [here](https://github.com/codolutions/relay-me-server-side-component).
+* Clone [the server-side settings](https://github.com/codolutions/relay-me-android-server-side), update the settings accordingly, build, and replace the jar file `relayme-serverside-0.0.1-SNAPSHOT.jar` with your own artifact.
+* Now Relay ME will talk to your own server-side component.
+* Re-install the app, so its server-side settings is reset.
+

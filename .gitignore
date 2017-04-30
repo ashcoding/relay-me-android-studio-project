@@ -3,4 +3,4 @@ local.properties
 .idea
 build
 *.iml
-
+.DS_Store

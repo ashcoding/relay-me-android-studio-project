@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gatewaysettingslayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <!-- Forward switch -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:singleLine="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/lbl_no_description"
+                android:src="@drawable/switch_forwarding" />
+
+            <TextView
+                android:id="@+id/forwardingswitchtext"
+                style="@style/headingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/lbl_gateway_type_title" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/gatewaytypespinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Options -->
+
+    <LinearLayout
+        android:id="@+id/gatewayoptionslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Setup Instructions, Gateway -->
+
+        <LinearLayout
+            android:id="@+id/setupgatewayinstructionslayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/emailgatewaydescriptiontext"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:clickable="true"
+                android:paddingTop="8dp"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <include layout="@layout/configuration_gmail_account" />
+
+        <include layout="@layout/configuration_smtp_server" />
+
+        <include layout="@layout/configuration_imap_server" />
+    </LinearLayout>
+
+</LinearLayout>

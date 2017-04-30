@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/applicationstatuslayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/connectionstatuslayout"
+        style="@style/statuswarninglayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/connectionstatus"
+            style="@style/statuswarningtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lbl_internet_connection_lost" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/statusseparatorline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/lbl_no_description"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_dim_dark" />
+
+    <LinearLayout
+        android:id="@+id/messagesstatuslayout"
+        style="@style/statuswarninglayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/serviceoffwarningtext"
+            style="@style/statuswarningtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lbl_service_off" />
+
+        <TextView
+            android:id="@+id/replyingdisabledwarningtext"
+            style="@style/statuswarningtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lbl_replying_disabled" />
+
+        <TextView
+            android:id="@+id/pendingmessageswarningtext"
+            style="@style/statuswarningtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lbl_pending_messages" />
+    </LinearLayout>
+
+</LinearLayout>

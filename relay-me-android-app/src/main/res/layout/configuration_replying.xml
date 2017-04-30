@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/replyinglayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/lbl_no_description"
+        android:paddingBottom="8dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_bright" />
+
+    <!-- Reply Switch -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/replyingswitchicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/lbl_no_description"
+                android:src="@drawable/switch_reply" />
+
+            <TextView
+                android:id="@+id/replyingswitchtext"
+                style="@style/headingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/lbl_reply_switch_title" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/replyingswitchcheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <!-- Instructions -->
+
+    <LinearLayout
+        android:id="@+id/replyinginstructions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:paddingTop="8dp" >
+
+        <TextView
+            style="@style/normaltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_reply_gateway_not_setup" />
+    </LinearLayout>
+
+    <!-- Options -->
+
+    <LinearLayout
+        android:id="@+id/replyingoptionslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Mailbox -->
+
+        <LinearLayout
+            android:id="@+id/mailboxlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:singleLine="true" >
+
+                <TextView
+                    android:id="@+id/mailboxtext"
+                    style="@style/normaltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/lbl_mailbox" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/mailboxspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Polling Factor -->
+
+        <LinearLayout
+            android:id="@+id/pollingfactorlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:singleLine="true" >
+
+                <TextView
+                    android:id="@+id/pollingfactortext"
+                    style="@style/normaltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/lbl_polling_factor" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/pollingfactorspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Reply Status Switch -->
+
+        <LinearLayout
+            android:id="@+id/replyingstatusswitchlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/replyingstatusswitchtext"
+                    style="@style/normaltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/lbl_reply_status_switch" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/replyingstatusswitchcheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <!-- Reply from a different email -->
+
+        <LinearLayout
+            android:id="@+id/replyingfromdifferentemailswitchlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/replyingfromdifferentemailswitchtext"
+                    style="@style/normaltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/lbl_replying_from_different_email" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/replyingfromdifferentemailswitchcheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <!-- Reply source email -->
+
+        <LinearLayout
+            android:id="@+id/replysourcelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:singleLine="true" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/replysourcevalue"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="8dp" />
+
+            <ImageView
+                android:id="@+id/editreplysourcebutton"
+                style="@style/imagebutton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/btn_edit_reply_source"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_edit" />
+        </LinearLayout>
+
+        <!-- Edit Target Email -->
+
+        <LinearLayout
+            android:id="@+id/editreplysourcelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editreplysourcetextbox"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/hnt_reply_source_text_box"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:singleLine="true" >
+
+                <ImageView
+                    android:id="@+id/canceleditreplysourcebutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_cancel"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_revert" />
+
+                <ImageView
+                    android:id="@+id/savereplysourcebutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_ok"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_save" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

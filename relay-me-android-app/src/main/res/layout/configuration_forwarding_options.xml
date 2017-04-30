@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forwardinglayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/lbl_no_description"
+        android:paddingBottom="8dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_bright" />
+
+    <!-- Missed Call Switch -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/missedcallnotificationtext"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp"
+                android:paddingRight="8dp"
+                android:text="@string/lbl_tell_me_about_missed_calls" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/missedcallnotificationcheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <!-- Email prefix -->
+
+    <LinearLayout
+        android:id="@+id/emailsubjectprefixlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Email prefix value -->
+
+        <LinearLayout
+            android:id="@+id/emailsubjectprefixvaluelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/lbl_email_subject_prefix" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/emailsubjectprefixvalue"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" />
+
+            <ImageView
+                android:id="@+id/editemailsubjectprefixbutton"
+                style="@style/imagebutton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/btn_edit_email_subject_prefix"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_edit" />
+        </LinearLayout>
+
+        <!-- Edit email prefix -->
+
+        <LinearLayout
+            android:id="@+id/editemailsubjectprefixlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editemailsubjectprefixtextbox"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/hnt_email_subject_prefix_text_box"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:singleLine="true" >
+
+                <ImageView
+                    android:id="@+id/canceleditemailsubjectprefixbutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_cancel"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_revert" />
+
+                <ImageView
+                    android:id="@+id/saveemailsubjectprefixbutton"
+                    style="@style/imagebutton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/btn_ok"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_save" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
