@@ -21,7 +21,7 @@ http://thehackernews.com/2014/08/hacking-gmail-account-mobile-app.html
 ### Running your own server-side component ###
 
 * Follow the instructions in [here](https://github.com/codolutions/relay-me-server-side-component).
-* Clone [the server-side settings](https://github.com/codolutions/relay-me-android-server-side), update the settings accordingly, build, and replace the jar file `relayme-serverside-0.0.1-SNAPSHOT.jar` with your own artifact.
+* Clone [the server-side settings](https://github.com/codolutions/relay-me-android-server-side), update the settings accordingly, build, and replace the jar file `relayme-serverside.jar` with your own artifact.
 * Now Relay ME will talk to your own server-side component.
 * Re-install the app, so its server-side settings is reset.
 
