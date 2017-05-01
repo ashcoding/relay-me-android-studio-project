@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/welcomedialog"
+    android:id="@+id/opensourcenoticedialog"
     style="@style/dialoglayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -8,7 +8,7 @@
     android:showDividers="middle" >
 
     <LinearLayout
-        android:id="@+id/welcomedialogcontents"
+        android:id="@+id/opensourcenoticedialogcontents"
         style="@style/dialogcontents"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -22,23 +22,23 @@
             android:padding="8dp" >
 
             <TextView
-                android:id="@+id/welcomedialogheader"
+                android:id="@+id/opensourcenoticedialogheader"
                 style="@style/normaltext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="all"
                 android:paddingBottom="16dp"
-                android:text="@string/lbl_welcome_dialog_header"
+                android:text="@string/lbl_opensource_notice_dialog_header"
                 android:textIsSelectable="true" />
 
             <TextView
-                android:id="@+id/welcomedialogdetails"
+                android:id="@+id/opensourcenoticedialogdetails"
                 style="@style/normaltext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autoLink="all"
                 android:paddingBottom="16dp"
-                android:text="@string/lbl_welcome_dialog_details"
+                android:text="@string/lbl_opensource_notice_dialog_details"
                 android:textIsSelectable="true" />
         </LinearLayout>
     </LinearLayout>
@@ -51,12 +51,12 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/cancelwelcomedialog"
+            android:id="@+id/cancelopensourcenoticedialog"
             style="@style/buttonbarbutton"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:text="@string/btn_welcome_dialog_hide" />
+            android:text="@string/btn_opensource_notice_dialog_hide" />
     </LinearLayout>
 
 </LinearLayout>

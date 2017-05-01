@@ -8,7 +8,7 @@
     android:showDividers="middle" >
 
     <LinearLayout
-        android:id="@+id/welcomedialogcontents"
+        android:id="@+id/opensourcenoticedialogcontents"
         style="@style/dialogcontents"
         android:layout_width="match_parent"
         android:layout_height="0dp"

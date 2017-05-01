@@ -56,13 +56,13 @@ public class UserData extends AbstractUserData {
     private static final String PREF_KEY_SERVER_SIDE_USERNAME = "SERVER_SIDE_KEY";
     private static final String PREF_KEY_ANY_SMS_RECEIVED = "ANY_SMS_RECEIVED";
     private static final String PREF_KEY_ONLINE = "ONLINE";
+    private static final String PREF_KEY_OPEN_SOURCE_NOTICE_SHOWN = "OPEN_SOURCE_NOTICE_SHOWN";
     private static final long SERVER_RESPONSE_FRESHNESS_PERIOD_IN_MS = CachedData.ONE_WEEK;
     private static final long SERVER_RESPONSE_LONGER_FRESHNESS_PERIOD_IN_MS = 6 * CachedData.ONE_WEEK;
     private static final long SERVER_RESPONSE_VALIDITY_PERIOD_IN_MS = 2 * 52 * CachedData.ONE_WEEK;
     private static final long SERVER_RESPONSE_REFRESHING_TRY_INTERVAL_IN_MS = CachedData.ONE_DAY;
 
     private static final int DEFAULT_PASSWORD_LENGTH = 16;
-    public static final int TRIAL_LIMIT_TEXT_SEND = 3;
 
     public UserData(Context context) {
         super(context);
@@ -205,6 +205,14 @@ public class UserData extends AbstractUserData {
 
     public void setSendingMessagesNow(boolean sendintMessagesNow) {
         setBoolean(PREF_KEY_SENDING_MESSAGES_NOW, sendintMessagesNow);
+    }
+
+    public boolean isOpenSourceNoticeShown() {
+        return getBoolean(PREF_KEY_OPEN_SOURCE_NOTICE_SHOWN);
+    }
+
+    public void setOpenSourceNoticeShown(boolean openSourceNoticeShown) {
+        setBoolean(PREF_KEY_OPEN_SOURCE_NOTICE_SHOWN, openSourceNoticeShown);
     }
 
     public HashMap<String, String> getContacts() {

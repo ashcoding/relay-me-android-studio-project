@@ -157,11 +157,12 @@ public class SystemStatus
         all.put("Unique ID", getUniqueId());
         all.put("Online", isOnline());
         all.put("Any SMS received", getUserData().isAnySmsReceived());
-        all.put("Any Pending Messages", isThereAnyPendingMessage());
-        all.put("Is Sending Messages", getUserData().isSendingMessagesNow());
+        all.put("Any pending messages", isThereAnyPendingMessage());
+        all.put("Is sending messages", getUserData().isSendingMessagesNow());
         all.put("Last contacts read", getUserData().getLastTimeContactsRead());
-        all.put("Messaging Configuration", getUserData().getMessagingConfiguration());
-        all.put("Service Configuration", getUserData().getServiceConfiguration());
+        all.put("Messaging configuration", getUserData().getMessagingConfiguration());
+        all.put("Service configuration", getUserData().getServiceConfiguration());
+        all.put("Is Open-source notice shown", getUserData().isOpenSourceNoticeShown());
         return all;
     }
 }

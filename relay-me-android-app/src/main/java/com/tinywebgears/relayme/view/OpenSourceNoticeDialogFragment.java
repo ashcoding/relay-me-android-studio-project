@@ -10,24 +10,24 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.tinywebgears.relayme.R;
-import com.tinywebgears.relayme.view.WelcomeDialogFragment.WelcomeDialogListener;
+import com.tinywebgears.relayme.view.OpenSourceNoticeDialogFragment.OpenSourceDialogListener;
 
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
 @EFragment
-public class WelcomeDialogFragment extends AbstractDialogFragment<WelcomeDialogListener>
+public class OpenSourceNoticeDialogFragment extends AbstractDialogFragment<OpenSourceDialogListener>
 {
-    private static final String TAG = WelcomeDialogFragment.class.getName();
+    private static final String TAG = OpenSourceNoticeDialogFragment.class.getName();
 
-    @ViewById(R.id.welcomedialogdetails)
-    TextView welcomeText;
+    @ViewById(R.id.opensourcenoticedialogdetails)
+    TextView openSourceNoticeText;
 
     @Override
-    protected Class<WelcomeDialogListener> getListenerClass()
+    protected Class<OpenSourceDialogListener> getListenerClass()
     {
-        return WelcomeDialogListener.class;
+        return OpenSourceDialogListener.class;
     }
 
     @Override
@@ -42,29 +42,29 @@ public class WelcomeDialogFragment extends AbstractDialogFragment<WelcomeDialogL
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        getDialog().setTitle(R.string.lbl_welcome_dialog_title);
-        final View dialogView = inflater.inflate(R.layout.dialog_welcome, container, false);
+        getDialog().setTitle(R.string.lbl_opensource_notice_dialog_title);
+        final View dialogView = inflater.inflate(R.layout.dialog_open_source_notice, container, false);
         return dialogView;
     }
 
     @Override
     public void onResume()
     {
-        Log.d(TAG, "WelcomeDialogFragment.onResume");
+        Log.d(TAG, "OpenSourceNoticeDialogFragment.onResume");
         super.onResume();
 
-        welcomeText.setMovementMethod(LinkMovementMethod.getInstance());
+        openSourceNoticeText.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
-    @Click(R.id.cancelwelcomedialog)
+    @Click(R.id.cancelopensourcenoticedialog)
     public void onCancelWelcomeDialogButtonClick(View v)
     {
-        // getListener().onFinishWelcomeDialog(true);
-        WelcomeDialogFragment.this.dismiss();
+        getListener().onFinishWelcomeDialog();
+        OpenSourceNoticeDialogFragment.this.dismiss();
     }
 
-    public interface WelcomeDialogListener
+    public interface OpenSourceDialogListener
     {
-        void onFinishWelcomeDialog(boolean dontShowAgain);
+        void onFinishWelcomeDialog();
     }
 }

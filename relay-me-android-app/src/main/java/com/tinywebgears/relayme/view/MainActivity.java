@@ -38,12 +38,14 @@ import com.tinywebgears.relayme.view.HelpDialogFragment.HelpDialogAction;
 import com.tinywebgears.relayme.view.HelpDialogFragment.HelpDialogListener;
 import com.tinywebgears.relayme.view.SmsHelpDialogFragment.SmsHelpDialogAction;
 import com.tinywebgears.relayme.view.SmsHelpDialogFragment.SmsHelpDialogListener;
+import com.tinywebgears.relayme.view.OpenSourceNoticeDialogFragment.OpenSourceDialogListener;
 
 import org.androidannotations.annotations.EActivity;
 
 @EActivity(R.layout.main)
 public class MainActivity extends BaseTabActivity implements HelpDialogListener,
-        SmsHelpDialogListener, ContactSupportDialogListener, AboutDialogListener {
+        SmsHelpDialogListener, ContactSupportDialogListener, AboutDialogListener,
+        OpenSourceDialogListener {
     private static final String TAG = MainActivity.class.getName();
     private static final String FRAGMENT_TAG_CONFIGURATION = "Configuration";
     private static final String FRAGMENT_TAG_MESSAGES = "Messages";
@@ -228,8 +230,9 @@ public class MainActivity extends BaseTabActivity implements HelpDialogListener,
             } finally {
                 uri = null;
             }
-        } else
-            showWelcomeDialog();
+        } else if (!getUserData().isOpenSourceNoticeShown()) {
+            showOpenSourceNotice();
+        }
     }
 
     @Override
@@ -275,10 +278,10 @@ public class MainActivity extends BaseTabActivity implements HelpDialogListener,
         warningDialog.show(fm, "fragment_alert_dialog");
     }
 
-    private void showWelcomeDialog() {
+    private void showOpenSourceNotice() {
         FragmentManager fm = getSupportFragmentManager();
-        DialogFragment welcomeDialog = new WelcomeDialogFragment_();
-        welcomeDialog.show(fm, "fragment_welcome_dialog");
+        DialogFragment openSourceNoticeDialog = new OpenSourceNoticeDialogFragment_();
+        openSourceNoticeDialog.show(fm, "fragment_open_source_dialog");
     }
 
     private void showSmsHelpDialog() {
@@ -384,6 +387,11 @@ public class MainActivity extends BaseTabActivity implements HelpDialogListener,
         contactsIntent.putExtra(LogsIntentService.PARAM_IN_ISSUE_CATEGORY, category);
         contactsIntent.putExtra(LogsIntentService.PARAM_IN_USER_COMMENTS, comments);
         startIntentService(LogsIntentService.ACTION_CODE_SEND_LOGS, contactsIntent);
+    }
+
+    @Override
+    public void onFinishWelcomeDialog() {
+        getUserData().setOpenSourceNoticeShown(true);
     }
 
     /**

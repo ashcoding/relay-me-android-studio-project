@@ -174,10 +174,10 @@
     <string name="lbl_errors_deleted">Errors cleared.</string>
     <string name="lbl_error_header_repeats">repeated %s times</string>
     <!-- Welcome dialog -->
-    <string name="btn_welcome_dialog_hide">OK</string>
-    <string name="lbl_welcome_dialog_title">WARNING!</string>
-    <string name="lbl_welcome_dialog_header">This app is not maintained anymore. It will be removed from Google Play by 31/06/2017.</string>
-    <string name="lbl_welcome_dialog_details">If you are a developer and would like to maintain this app, please email info@codolutions.com.</string>
+    <string name="btn_opensource_notice_dialog_hide">OK</string>
+    <string name="lbl_opensource_notice_dialog_title">Good news!</string>
+    <string name="lbl_opensource_notice_dialog_header">Relay ME is now open-source!</string>
+    <string name="lbl_opensource_notice_dialog_details">Read more about it in our new blog post: http://wp.me/p3Iah1-1b</string>
     <!-- OAuth dialog -->
     <string name="lbl_oauth_dialog_title">Linking GMail account</string>
     <string name="lbl_oauth_dialog_header">Redirecting you to Google now.</string>
